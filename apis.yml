@@ -1,7 +1,25 @@
 aid: iad
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/iad.png
 name: IAD
-description: IAD is a company surfaced as a portfolio company of insight-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: IAD Group (I@D International) is a European real-estate network company that
+  combines real estate, digital tools, and network marketing to digitalize the traditional
+  agency model through a network of independent agents rather than brick-and-mortar offices.
+  Founded in France, IAD operates across France, Portugal, Spain, Italy, Germany, Mexico,
+  the United Kingdom, and the United States (Florida), with roughly 20,000 independent
+  agents, around 500 employees, more than 96,000 online property listings, and 521 million
+  euros in 2025 turnover. It is a portfolio company of Insight Partners. IAD publishes a
+  consumer/agent web presence but no public developer platform or API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/iad/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Real Estate
+- PropTech
+- Network Marketing
+- Property Listings
+- Europe
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/iad-domain-security.yml
 - type: Website
-  url: https://iadinternational.com/en/
+  url: https://www.iadgroup.com/en/
+- type: PrivacyPolicy
+  url: https://www.iadgroup.com/en/confidentiality-policy/
+- type: TermsOfService
+  url: https://www.iadgroup.com/en/legal-notices/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
